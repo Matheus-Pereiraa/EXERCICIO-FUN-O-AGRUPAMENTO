@@ -1,9 +1,17 @@
-use ExercicioDeAgregação
+use ExemploNaAula
 
-
-insert into Produtos(DESCRICAO, Preco)
+insert into Produtos(descricao, preco)
 values ('Teclado', 55), ('Mouse', 30), ('Fone de ouvido', 10), ('Mousepad', 15)
+select * from Produtos
 
 
-select SUM (Preco) from Produtos       --Colocaria a Função nativa depois do Select, e no "()" colocaria a coluna que quer usar a função
 
+select AVG (preco) from Produtos
+
+-- select [Função Nativa] (NomeDaColuna) from NomeDaTabela  
+
+
+MAX
+AVG
+COUNT
+MIN
